@@ -103,6 +103,7 @@
 		
 		public function createDatabase() {
 			require_once( APP_FRAMEWORK_CLASSES . '/Base/CBaseDatabase.class.php' );
+
 			
 			$this->m_resPortalDatabase = CBaseDatabase::loadPortalDb();
 		}				
