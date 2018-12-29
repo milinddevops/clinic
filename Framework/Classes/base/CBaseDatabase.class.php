@@ -17,4 +17,5 @@ class CBaseDatabase {
 		return $m_lnk_Portal;
 	}		
 }
+
 ?>
