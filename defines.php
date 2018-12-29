@@ -1,6 +1,6 @@
 <?php 
 
-	define( 'APP_FRAMEWORK_CLASSES', '../../Framework/Classes/' );
+	define( 'APP_FRAMEWORK_CLASSES', '../Framework/Classes/' );
 	define( 'APP_ADMIN_PORTAL', '../../Applications/admin/Applications/' );
 	define( 'BASE_DB_CLASS', '/base/' );
 	define( 'ADMIN_PORTAL_TEMPLATES', '../../Interfaces/Templates/Admin/' );
