@@ -7,7 +7,7 @@
 	define( 'INTERFACES', '../../Interfaces/Templates/' );
 	define( 'SMARTY_LIB', '../../Libraries/smarty/libs/' );
 	define( 'LIBRARIES', '../../Libraries/' );
-	define( 'EOS_BASE', '../../EOS/base/' );
+	define( 'EOS_BASE', '../../EOS/Base/' );
 	define( 'EOS_PATH', '../../EOS/' );
 	define( 'BACKUP_PATH', '../../database_backups/');
 	define( 'LICENSE_PATH', '../../');
