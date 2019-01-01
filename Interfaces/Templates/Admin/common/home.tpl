@@ -11,7 +11,7 @@
 	<div class="shell">
 		<!-- Logo + Top Nav -->
 		<div id="top">
-			<h1><a href="#"> <marquee>Shree Diagnostic Clinic</marquee></a></h1>
+			<h1><a href="#"> <marquee>Shree Diagnostic Clinic - New look</marquee></a></h1>
 			<!-- <div id="top-navigation">
 				Welcome <a href="#"><strong>Administrator</strong></a>
 				<span>|</span>
