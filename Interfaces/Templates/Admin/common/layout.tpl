@@ -22,7 +22,7 @@
 	<div class="shell">
 		<!-- Logo + Top Nav -->
 		<div id="top">
-			<h1><a href="#"><marquee width="250px">Shree Diagnostic Clinic</marquee></a></h1>
+			<h1><a href="#"><marquee width="250px">Shree Diagnostic Clinic - New Look</marquee></a></h1>
 			{include file="./common/header.tpl"}
 		</div>
 		<!-- End Logo + Top Nav -->
