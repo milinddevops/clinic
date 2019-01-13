@@ -92,7 +92,7 @@ class CAuthenticateModule extends CAdminApp {
 		
 		require_once( SMARTY_LIB . 'CSmarty.class.php' );
 
-		$objSmarty = new CSmarty( ADMIN_PORTAL_TEMPLATES );
+		$objSmarty = new CSmarty( ADMIN_PORTAL_TEMPLATES_NEW );
 		
 		$this->loadExitTags();
 		

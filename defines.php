@@ -4,6 +4,7 @@
 	define( 'APP_ADMIN_PORTAL', '../../Applications/admin/Applications/' );
 	define( 'BASE_DB_CLASS', '/base/' );
 	define( 'ADMIN_PORTAL_TEMPLATES', '../../Interfaces/Templates/Admin/' );
+	define( 'ADMIN_PORTAL_TEMPLATES_NEW', '../../Interfaces/Templates/AdminNew/' );
 	define( 'INTERFACES', '../../Interfaces/Templates/' );
 	define( 'SMARTY_LIB', '../../Libraries/smarty/libs/' );
 	define( 'LIBRARIES', '../../Libraries/' );
