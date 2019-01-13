@@ -24,7 +24,7 @@
 
   <body class="bg-dark">
 
-    
+    content
 
     <!-- Bootstrap core JavaScript-->
     <script src="asstes/vendor/jquery/jquery.min.js"></script>
