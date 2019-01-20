@@ -5,7 +5,7 @@
 	</div>
 	<!-- End Box Head -->
 	
-	<form name="loginform" id="loginform" action="{$exit_tags.login_attempt}" method="post">						
+	<form name="loginform" id="loginform" action="{$exit_tags.login_attempt}" method="post">
 		<!-- Form -->
 		<div class="form">
 				<p>					
@@ -21,7 +21,7 @@
 		
 		<!-- Form Buttons -->
 		<div class="buttons">
-			<input type="submit" class="button" value="Login" />						
+			<button type="submit" class="btn btn-primary btn-lg btn-block">Login</button>
 		</div>
 		<!-- End Form Buttons -->
 	</form>
