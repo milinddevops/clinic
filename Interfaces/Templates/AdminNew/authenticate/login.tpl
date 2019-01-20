@@ -5,7 +5,7 @@
       <form name="loginform" id="loginform" action="{$exit_tags.login_attempt}" method="post">
         <div class="form-group">
           <div class="form-label-group">
-            <input type="email" name="user[username]" id="user_login" class="form-control" placeholder="Email address" required="required" autofocus="autofocus">
+            <input type="text" name="user[username]" id="user_login" class="form-control" placeholder="Email address" required="required" autofocus="autofocus">
             <label for="user_login">Username</label>
           </div>
         </div>
