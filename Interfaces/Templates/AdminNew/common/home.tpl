@@ -12,13 +12,13 @@
     <title>SB Admin - Login</title>
 
     <!-- Bootstrap core CSS-->
-    <link href="asstes/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template-->
-    <link href="asstes/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 
     <!-- Custom styles for this template-->
-    <link href="asstes/css/sb-admin-2.css" rel="stylesheet">
+    <link href="assets/css/sb-admin-2.css" rel="stylesheet">
 
   </head>
 
@@ -27,11 +27,11 @@
     {$content}
 
     <!-- Bootstrap core JavaScript-->
-    <script src="asstes/vendor/jquery/jquery.min.js"></script>
-    <script src="asstes/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Core plugin JavaScript-->
-    <script src="asstes/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="assets/vendor/jquery-easing/jquery.easing.min.js"></script>
 
   </body>
 
