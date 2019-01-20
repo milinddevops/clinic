@@ -15,7 +15,7 @@
             <label for="user_pass">Password</label>
           </div>
         </div>
-        <a class="btn btn-primary btn-block" href="index.html">Login</a>
+        <button type="submit" class="btn btn-primary btn-lg btn-block">Login</button>
       </form>
       <div class="text-center">
     </div>

@@ -21,7 +21,7 @@
 		
 		<!-- Form Buttons -->
 		<div class="buttons">
-			<button type="submit" class="btn btn-primary btn-lg btn-block">Login</button>
+			<input type="submit" class="button" value="Login" />			
 		</div>
 		<!-- End Form Buttons -->
 	</form>
