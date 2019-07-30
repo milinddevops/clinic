@@ -1,9 +1,12 @@
 #!groovy
 
 pipeline {
-	agent any
+
+	agent none
+
 	stages {
-		stage {
+		stage('Init') {
+			agent any
 			steps {
 				echo "Init..."
 			}
