@@ -15,7 +15,7 @@ pipeline {
 
 		stage('Build Image...') {
 			steps {
-				buildImage()
+				buildAndRegisterImage()
 			}
 		}
 	}
@@ -44,8 +44,3 @@ def buildAndRegisterImage() {
 		buildResult.push()
 	}
 }
-
-def loginToImageRegistry() {
-
-}
-
