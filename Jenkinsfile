@@ -37,9 +37,9 @@ def init() {
 
 def buildAndRegisterImage() {
 	def buildResult
-	docker.withRegistry(env.REGISTRY_URL, env.DOCKER_CREDS) {
+	docker.withRegistry(env.REGISTRY_URL) {
 		echo "Builing image....."
-		buildResult = docker.build(env.IMAGE_NAME)
+		buildResult = docker.build(env.IMAGE_NAME, '-f Dockerfile')
 		echo "Pushhing image...."
 		buildResult.push()
 	}
