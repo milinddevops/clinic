@@ -26,7 +26,7 @@ pipeline {
 // ================================================================================================
 
 def init() {
-	env.REGISTRY_URL = "https://cloud.docker.com/repository/docker/milinddocker/clinic"
+	env.REGISTRY_URL = " https://index.docker.io/v1/milinddocker/clinic"
 	env.DOCKER_CREDS = "DockerCredentials"
 	env.IMAGE_NAME 	 = "clinic"
 }
@@ -37,7 +37,7 @@ def init() {
 
 def buildAndRegisterImage() {
 	def buildResult
-	docker.withRegistry(env.REGISTRY_URL, env.DOCKER_CREDS) {
+	docker.withRegistry(env.REGISTRY_URL) {
 		echo "Builing image....."
 		// buildResult = docker.build(env.IMAGE_NAME)
 		echo "Pushhing image...."
