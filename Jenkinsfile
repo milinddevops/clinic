@@ -39,7 +39,7 @@ def buildAndRegisterImage() {
 	def buildResult
 	docker.withRegistry(env.REGISTRY_URL) {
 		echo "Builing image....."
-		//buildResult = docker.build(env.IMAGE_NAME)
+		buildResult = docker.build(env.IMAGE_NAME)
 		echo "Pushhing image...."
 		//buildResult.push()
 	}
