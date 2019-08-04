@@ -15,14 +15,14 @@ pipeline {
     stage("Initilaize") {
       agent any
       steps {
-        initialize()
+        init()
       }
     }
 
     stage("Build Application") {
       agent any
       steps {
-        buildApp()
+        buildAndRegisterImage()
       }
     }
   }
