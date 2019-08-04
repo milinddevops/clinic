@@ -35,6 +35,7 @@ def init() {
 	env.REGISTRY_URL = " https://index.docker.io/v1/milinddocker/clinic"
 	env.DOCKER_CREDS = "DockerCredentials"
 	env.IMAGE_NAME 	 = "clinic"
+	sleep 10000
 }
 
 // ================================================================================================
