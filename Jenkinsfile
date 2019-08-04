@@ -16,6 +16,7 @@ pipeline {
       agent any
       steps {
         init()
+	sh 'pwd'
       }
     }
 
