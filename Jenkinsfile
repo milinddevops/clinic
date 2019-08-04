@@ -47,7 +47,7 @@ def init() {
 // ================================================================================================
 
 def buildAndRegisterImage() {
-	withDockerContainer('') {
+	withDockerContainer('dind') {
 	   sh 'docker build -t clinic .'
 	}
 	/*def buildResult
