@@ -20,7 +20,7 @@ pipeline {
     stage("Build Application") {
       steps {
       	container('dind') {
-	     script{
+	     script {
 	       buildAndRegisterImage()
 	     }
       	}
