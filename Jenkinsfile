@@ -14,7 +14,7 @@ pipeline {
     stage("Initilaize") {
       steps {
         init()
-	sh 'pwd'
+	sh 'docker start'
       }
     }
 
