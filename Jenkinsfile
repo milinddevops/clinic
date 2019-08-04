@@ -15,6 +15,8 @@ pipeline {
       steps {
         init()
 	sh 'service docker start'
+	sleep 10
+	sh 'service docker status'
       }
     }
 
