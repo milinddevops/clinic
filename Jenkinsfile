@@ -21,6 +21,7 @@ pipeline {
       steps {
       	container('dind') {
 	     script {
+	       echo "Building Image...."
 	       buildAndRegisterImage()
 	     }
       	}
@@ -46,11 +47,14 @@ def init() {
 // ================================================================================================
 
 def buildAndRegisterImage() {
-	def buildResult
+	withDockerContainer('') {
+	   sh 'docker build -t clinic .'
+	}
+	/*def buildResult
 	docker.withRegistry(env.REGISTRY_URL) {
 		echo "Builing image.....${env.IMAGE_NAME}"
 		buildResult = docker.build(env.IMAGE_NAME)
 		echo "Pushhing image...."
 		//buildResult.push()
-	}
+	}*/
 }
