@@ -14,7 +14,7 @@ pipeline {
     stage("Initilaize") {
       steps {
         init()
-	sh 'docker start'
+	sh 'service docker start'
       }
     }
 
