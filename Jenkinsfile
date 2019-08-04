@@ -36,7 +36,7 @@ def init() {
 	env.DOCKER_CREDS = "DockerCredentials"
 	env.IMAGE_NAME 	 = "clinic"
 	sh 'service docker start'
-	she 'service docker status'
+	sh 'service docker status'
 }
 
 // ================================================================================================
