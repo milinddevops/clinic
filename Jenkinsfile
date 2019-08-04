@@ -6,7 +6,10 @@ import java.net.URL
 pipeline {
 
 	agent none
-
+	
+	options {
+	   timeout(time: 1, unit: 'DAYS')
+	}
 	stages {
 		stage('Init') {
 			agent any
