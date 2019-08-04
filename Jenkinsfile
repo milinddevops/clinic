@@ -20,7 +20,7 @@ pipeline {
     }
 
     stage("Build Application") {
-      angent any
+      agent any
       steps {
         buildApp()
       }
