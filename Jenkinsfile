@@ -10,8 +10,6 @@ pipeline {
 	options {
 	   timeout(time: 1, unit: 'DAYS')
 	}
-:wq
-
 	stages {
 		stage('Init') {
 			agent any
