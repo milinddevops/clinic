@@ -49,7 +49,6 @@ def init() {
 def buildAndRegisterImage() {
 	withDockerContainer('dind') {
 	   sh 'docker version'
-	   sh 'docker build -t clinic .'
 	}
 	/*def buildResult
 	docker.withRegistry(env.REGISTRY_URL) {
