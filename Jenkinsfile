@@ -10,6 +10,8 @@ pipeline {
 	options {
 	   timeout(time: 1, unit: 'DAYS')
 	}
+:wq
+
 	stages {
 		stage('Init') {
 			agent any
@@ -20,6 +22,7 @@ pipeline {
 		}
 
 		stage('Build Image...') {
+		        agent any
 			steps {
 				buildAndRegisterImage()
 			}
