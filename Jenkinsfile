@@ -35,8 +35,8 @@ def init() {
 	env.REGISTRY_URL = " https://index.docker.io/v1/milinddocker/clinic"
 	env.DOCKER_CREDS = "DockerCredentials"
 	env.IMAGE_NAME 	 = "clinic"
-	sh 'sudo service docker start'
-	she 'sudo service docker status'
+	sh 'service docker start'
+	she 'service docker status'
 }
 
 // ================================================================================================
