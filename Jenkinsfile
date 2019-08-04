@@ -19,7 +19,7 @@ pipeline {
 
     stage("Build Application") {
       steps {
-      	container('dind') {
+      	container("dind") {
 	     script {
 	       echo "Building Image...."
 	       buildAndRegisterImage()
