@@ -5,7 +5,7 @@ import java.net.URL
 
 
 pipeline {
-  
+  agent any 
   options {
     timeout(time: 1, unit: 'DAYS')
   }
