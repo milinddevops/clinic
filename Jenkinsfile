@@ -3,30 +3,32 @@
 import groovy.json.JsonSlurper
 import java.net.URL
 
+
 pipeline {
+  agent none
 
-	agent none
-	
-	options {
-	   timeout(time: 1, unit: 'DAYS')
-	}
-	stages {
-		stage('Init') {
-			agent any
-			steps {
-				echo "Init..."
-				init()
-			}
-		}
+  options {
+    timeout(time: 1, unit: 'DAYS')
+  }
 
-		stage('Build Image...') {
-		        agent any
-			steps {
-				buildAndRegisterImage()
-			}
-		}
-	}
+  stages() {
+    stage("Initilaize") {
+      agent any
+      steps {
+        initialize()
+      }
+    }
+
+    stage("Build Application") {
+      angent any
+      steps {
+        buildApp()
+      }
+    }
+  }
 }
+
+
 
 // ================================================================================================
 // Initialization steps
