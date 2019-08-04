@@ -5,15 +5,13 @@ import java.net.URL
 
 
 pipeline {
-  agent none
-
+  
   options {
     timeout(time: 1, unit: 'DAYS')
   }
 
   stages() {
     stage("Initilaize") {
-      agent any
       steps {
         init()
 	sh 'pwd'
@@ -21,7 +19,6 @@ pipeline {
     }
 
     stage("Build Application") {
-      agent any
       steps {
         buildAndRegisterImage()
       }
