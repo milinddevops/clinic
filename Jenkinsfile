@@ -20,7 +20,7 @@ pipeline {
     stage("Build Application") {
       steps {
       	container("dind") {
-	  echo Building Image
+	  sh 'echo Building Image'
       	}
       }
     }
