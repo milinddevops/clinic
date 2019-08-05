@@ -48,7 +48,7 @@ def init() {
 
 def buildAndRegisterImage() {
 	withDockerContainer("dind") {
-	   sh "echo 'came here'"
+	   sh "echo came here"
 	}
 	/*def buildResult
 	docker.withRegistry(env.REGISTRY_URL) {
