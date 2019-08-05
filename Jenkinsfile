@@ -22,7 +22,9 @@ pipeline {
       	container("dind") {
 	     script {
 	       echo "Building Image...."
-	       buildAndRegisterImage()
+	       withDockerContainer("dind") {
+	           docker.build(env.IMAGE_NAME)
+		}
 	     }
       	}
       }
