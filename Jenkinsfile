@@ -20,9 +20,7 @@ pipeline {
     stage("Build Application") {
       steps {
       	container("dind") {
-	     script {
-	       echo "Building Image...."
-	     }
+	  echo Building Image
       	}
       }
     }
