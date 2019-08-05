@@ -17,12 +17,6 @@ pipeline {
       }
     }
 
-    stage("Checkout code") {
-     steps {
-       checkout scm
-     }
-    }
-
     stage("Build Application") {
       steps {
       	container("dind") {
@@ -54,7 +48,7 @@ def init() {
 
 def buildAndRegisterImage() {
 	withDockerContainer("dind") {
-	   sh "echo came here"
+	   docker.build(env.IMAGE_NAME)
 	}
 	/*def buildResult
 	docker.withRegistry(env.REGISTRY_URL) {
