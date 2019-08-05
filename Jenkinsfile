@@ -17,6 +17,12 @@ pipeline {
       }
     }
 
+    stage {
+     steps {
+       checkout scm
+     }
+    }
+
     stage("Build Application") {
       steps {
       	container("dind") {
