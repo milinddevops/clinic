@@ -43,7 +43,14 @@ def init() {
 // Build steps
 // ================================================================================================
 
-def buildAndRegisterImage() {
+def buildImage() {
+  def build_command = ""
+  withDockerContainer("dind"){
+    build_command = sh(returnStdout: true, script: "docker build -t clinic -f Dockerfile")
+  }
+}
+
+/*def buildAndRegisterImage() {
 	def buildResult
 	docker.withRegistry(env.REGISTRY_URL) {
 	  echo "Builing image.....${env.IMAGE_NAME}"
@@ -56,4 +63,4 @@ def buildAndRegisterImage() {
 	     }
 	  }
 	}
-}
+}*/
