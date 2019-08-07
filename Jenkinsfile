@@ -20,7 +20,7 @@ pipeline {
     stage("Build Application") {
       steps {
         script {
-	  buildAndRegisterImage()
+	  buildImage()
 	} 	
       }
     }
