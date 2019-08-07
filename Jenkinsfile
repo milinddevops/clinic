@@ -20,8 +20,7 @@ pipeline {
     stage("Build Application") {
       steps {
         script {
-	  sh 'echo build image'
-	   //buildAndRegisterImage()
+	  buildAndRegisterImage()
 	} 	
       }
     }
