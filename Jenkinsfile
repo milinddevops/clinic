@@ -19,9 +19,10 @@ pipeline {
 
     stage("Build Application") {
       steps {
-      	container("dind") {
-	  sh 'echo Building Image'
-      	}
+        script {
+	  sh 'echo build image'
+	   //buildAndRegisterImage()
+	} 	
       }
     }
   }
