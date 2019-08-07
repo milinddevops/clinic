@@ -47,11 +47,13 @@ def buildAndRegisterImage() {
 	def buildResult
 	docker.withRegistry(env.REGISTRY_URL) {
 	  echo "Builing image.....${env.IMAGE_NAME}"
-	  withDockerContainer('dind') {
-             //buildResult = docker.build(env.IMAGE_NAME)
-	     sh 'docker build -t ' + ${env.IMAGE_NAME} + ' .'
-             echo "Pushhing image...."
-	     //buildResult.push()
+	  dir('clinic') {
+	     withDockerContainer('dind') {
+               //buildResult = docker.build(env.IMAGE_NAME)
+	       sh 'docker build -t ' + ${env.IMAGE_NAME} + ' .'
+               echo "Pushhing image...."
+	       //buildResult.push()
+	     }
 	  }
 	}
 }
