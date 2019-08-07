@@ -49,8 +49,8 @@ def buildAndRegisterImage() {
 	  echo "Builing image.....${env.IMAGE_NAME}"
 	  dir('clinic') {
 	     withDockerContainer('dind') {
-               //buildResult = docker.build(env.IMAGE_NAME)
-	       sh 'docker build -t ' + ${env.IMAGE_NAME} + ' -f Dockerfile'
+               buildResult = docker.build(env.IMAGE_NAME)
+	       //sh 'docker build -t ' + ${env.IMAGE_NAME} + ' -f Dockerfile'
                echo "Pushhing image...."
 	       //buildResult.push()
 	     }
