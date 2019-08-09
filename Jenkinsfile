@@ -16,12 +16,6 @@ pipeline {
         init()
       }
     }
-
-    stage("Build Application") {
-      steps {
-        test() 	
-      }
-    }
   }
 }
 
