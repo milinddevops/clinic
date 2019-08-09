@@ -65,6 +65,6 @@ def buildImage() {
 
 def test() {
   docker.withDockerContainer('docker:dind') {
-    def output = docker.build(env.IMAGE_NAME) // sh(returnStdout: true, script: "docker info")
+    def output = docker.build(env.IMAGE_NAME)
   }
 }
