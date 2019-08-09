@@ -20,7 +20,7 @@ pipeline {
     stage("Build Application") {
       steps {
         script {
-	  buildImage()
+	  test()
 	} 	
       }
     }
@@ -64,3 +64,10 @@ def buildImage() {
 	  }
 	}
 }*/
+
+def test() {
+  withDockerContainer('dind') {
+    def output = sh(returnStdout: true, script: "docker info")
+    sh "echo ${output}"
+  }
+}
