@@ -19,9 +19,7 @@ pipeline {
 
     stage("Build Application") {
       steps {
-        script {
-	  test()
-	} 	
+        test() 	
       }
     }
   }
