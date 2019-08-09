@@ -66,7 +66,7 @@ def buildImage() {
 }*/
 
 def test() {
-  withDockerContainer('docker:dind') {
+  docker.withDockerContainer('docker:dind') {
     def output = sh(returnStdout: true, script: "docker info")
     sh "echo ${output}"
   }
