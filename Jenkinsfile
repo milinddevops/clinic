@@ -45,7 +45,7 @@ def init() {
 
 def buildImage() {
   def build_command = ""
-  withDockerContainer("dind"){
+  docker.withDockerContainer("dind"){
     build_command = sh(returnStdout: true, script: "docker build -t clinic -f Dockerfile")
   }
 }
@@ -67,7 +67,6 @@ def buildImage() {
 
 def test() {
   docker.withDockerContainer('docker:dind') {
-    def output = sh(returnStdout: true, script: "docker info")
-    sh "echo ${output}"
+    def output = docker.build(env.IMAGE_NAME) // sh(returnStdout: true, script: "docker info")
   }
 }
