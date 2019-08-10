@@ -39,7 +39,7 @@ def init() {
 
 def buildImageWithContainer() {
    container('docker') {
-     docker.build(env.IMAGE_NAME)
+     sh 'docker info'  
    }
 }
 
