@@ -19,7 +19,7 @@ pipeline {
 
     stage("BuildApp") {
       steps {
-        build()
+        buildImg()
       }
     }
   }
@@ -42,7 +42,7 @@ def init() {
 // ================================================================================================
 
 
-def build() {
+def buildImg() {
   dir("clinic") {
     withDockerContainer("docker:dind") {
       sh 'docker info'
