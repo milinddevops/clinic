@@ -44,7 +44,7 @@ def init() {
 
 def buildImg() {
   dir("clinic") {
-    withDockerContainer("docker:dind") {
+    withDockerContainer("dind-daemon") {
       sh 'docker info'
     }
   }
