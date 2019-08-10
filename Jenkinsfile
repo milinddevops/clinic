@@ -42,14 +42,6 @@ def init() {
 // ================================================================================================
 
 
-def buildImg() {
-  dir("clinic") {
-    withDockerContainer("dind-daemon") {
-      sh 'docker info'
-    }
-  }
-}
-
 def buildImage() {
   def build_command = ""
   docker.withDockerContainer("dind"){
@@ -57,20 +49,18 @@ def buildImage() {
   }
 }
 
-/*def buildAndRegisterImage() {
+def buildAndRegisterImage() {
 	def buildResult
 	docker.withRegistry(env.REGISTRY_URL) {
 	  echo "Builing image.....${env.IMAGE_NAME}"
 	  dir('clinic') {
-	     withDockerContainer('dind') {
                buildResult = docker.build(env.IMAGE_NAME)
 	       //sh 'docker build -t ' + ${env.IMAGE_NAME} + ' -f Dockerfile'
                echo "Pushhing image...."
 	       //buildResult.push()
-	     }
 	  }
 	}
-}*/
+}
 
 def test() {
   docker.withDockerContainer('docker:dind') {
