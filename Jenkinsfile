@@ -18,7 +18,9 @@ pipeline {
     }
 
     stage("BuildApp") {
-      buildImageWithContainer()     
+      steps {
+        buildImageWithContainer()
+      }
     }
   }
 }
