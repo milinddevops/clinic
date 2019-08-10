@@ -17,14 +17,6 @@ pipeline {
       }
     }
 
-   stage('delete files from workspace') {
-    steps {
-      sh 'ls -l'
-      sh 'sudo rm -rf ./*'
-     }
-    }
-
-
     stage("BuildApp") {
       steps {
         buildImg()
