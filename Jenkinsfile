@@ -16,6 +16,12 @@ pipeline {
         init()
       }
     }
+
+    stage("BuildApp") {
+      steps {
+        build()
+      }
+    }
   }
 }
 
@@ -34,6 +40,15 @@ def init() {
 // ================================================================================================
 // Build steps
 // ================================================================================================
+
+
+def build() {
+  dir("clinic") {
+    withDockerContainer("docker:dind") {
+      sh 'docker info'
+    }
+  }
+}
 
 def buildImage() {
   def build_command = ""
