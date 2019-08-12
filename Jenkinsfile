@@ -34,7 +34,7 @@ pipeline {
 def init() {
 	env.REGISTRY_URL = "https://cloud.docker.com/repository/docker/milinddocker/clinic"
 	env.DOCKER_CREDS = "DockerCredentials"
-	env.IMAGE_NAME 	 = "clinic"
+	env.IMAGE_NAME 	 = "clinic:current"
 }
 
 def buildImageWithContainer() {
