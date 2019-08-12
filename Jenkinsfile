@@ -42,6 +42,7 @@ def buildImageWithContainer() {
      sh 'docker login -u milinddocker -p milind123'
      docker.withRegistry(env.REGISTRY_URL) {
        def buildResult = docker.build(env.IMAGE_NAME)
+       sh 'docker login -u milinddocker -p milind123'
        buildResult.push()
      }
    }
