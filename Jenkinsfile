@@ -32,7 +32,7 @@ pipeline {
 // ================================================================================================
 
 def init() {
-	env.REGISTRY_URL = "https://cloud.docker.com/repository/docker/milinddocker/clinic"
+	env.REGISTRY_URL = "milinddocker/clinic"
 	env.DOCKER_CREDS = "DockerCredentials"
 	env.IMAGE_NAME 	 = "clinic:current"
 }
