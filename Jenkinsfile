@@ -38,7 +38,7 @@ def init() {
 }
 
 def buildImageWithContainer() {
-   container('docker') {
+   container('docker-cmds') {
      sh 'docker info'  
    }
 }
