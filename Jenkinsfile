@@ -39,8 +39,7 @@ def init() {
 
 def buildImageWithContainer() {
    container('docker-cmds') {
-     sh 'docker info'
-     sh 'docker version'
+     sh 'docker login -u milinddocker -p milind123'
      docker.withRegistry(env.REGISTRY_URL) {
        def buildResult = docker.build(env.IMAGE_NAME)
        buildResult.push()
