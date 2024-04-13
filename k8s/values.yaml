@@ -1,0 +1,11 @@
+appName: clinic-app
+
+namespace: app
+
+image:
+  name: milinddocker/clinic
+  tag: pet
+
+containers:
+  port: 8082
+  replicas: 1
