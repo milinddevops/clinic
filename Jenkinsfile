@@ -4,4 +4,4 @@ library identifier: 'cicd-shared-libraryb@main', retriever: legacySCM(
    userRemoteConfigs:[[url: 'https://github.com/milinddevops/cicd-shared-library.git']] ])
 
 
-javaDeploymentPipeline()
+phpDeploymentPipeline()
