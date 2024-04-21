@@ -1,4 +1,4 @@
-FROM php:5.6.7-apache
+FROM php:5.6-apache
 MAINTAINER Milind Chavan <milindchavan.24@gmail.com>
 
 RUN docker-php-ext-install mysql
