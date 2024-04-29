@@ -4,7 +4,7 @@ namespace: app
 
 image:
   name: milinddocker/clinic
-  tag: pet
+  tag: clinic-clinic-BUILD-56
 
 containers:
   port: 8082
