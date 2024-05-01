@@ -6,10 +6,10 @@ RUN docker-php-ext-install mysql
 COPY . /var/www/html/
 COPY default-cnf.conf /etc/apache2/sites-available/000-default.conf
 WORKDIR /var/www/html
-
+RUN mkdir ./Interfaces/Templates/templates_c
 RUN chown -R www-data:www-data /var/www/html/
 RUN chmod 755 -R /var/www/html/
-RUN mkdir -p Interfaces/Templates/templates_c
+
 RUN ls -lart
 
 
