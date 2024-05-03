@@ -4,7 +4,7 @@ namespace: app
 
 image:
   name: milinddocker/clinic
-  tag: clinic-clinic-BUILD-56
+  tag: clinic-1.2.4-SNAPSHOT-BUILD-77
 
 containers:
   port: 8082
